@@ -1,0 +1,14 @@
+{
+  "name": "devit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm --filter ./apps/frontend build && pnpm --filter backend build",
+    "start": "concurrently \"pnpm --filter backend start:dev\" \"pnpm --filter frontend dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.26.2"
+}
